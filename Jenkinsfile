@@ -3,11 +3,11 @@ pipeline {
     agent any    
     
     environment {
-        DOCKER_TLS_VERIFY='1'                                                                                               
-        COMPOSE_TLS_VERSION='TLSv1_2'                                                                                       
-        DOCKER_CERT_PATH='/home/jenkins/admincerts'                                                                       
-        DOCKER_HOST='tcp://<UCP FQDN>:443'
-        DTR_FQDN_PORT='<DTR_FQDN>:4443'
+        DOCKER_TLS_VERIFY='1'                                                                                 
+        COMPOSE_TLS_VERSION='TLSv1_2'                                                                        
+        DOCKER_CERT_PATH='/home/jenkins/admincerts'                                                           
+        DOCKER_HOST='tcp://ec2-18-189-143-135.us-east-2.compute.amazonaws.com:443'
+        DTR_FQDN_PORT='ec2-18-189-143-135.us-east-2.compute.amazonaws.com:4443'
     }
 
     stages {
